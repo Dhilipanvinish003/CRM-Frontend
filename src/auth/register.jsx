@@ -26,9 +26,7 @@ const API = "https://crm-backend-347y.onrender.com";
 
     try {
       setLoading(true);
-      await axios.post(`${API}/api/auth/send-email-otp`, {
-        email: form.email,
-      });
+   await axios.post(`${API}/api/auth/send-email-otp`, { email: form.email });
       alert("OTP sent to email");
       setOtpSent(true);
     } catch (err) {
