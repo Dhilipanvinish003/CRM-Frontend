@@ -8,7 +8,7 @@ export default function Register() {
 const [loading, setLoading] = useState(false);
   const [otpSent, setOtpSent] = useState(false);
   
-
+const API = "https://crm-backend-347y.onrender.com";
 
   const [form, setForm] = useState({
     first_name: "",
@@ -26,7 +26,7 @@ const [loading, setLoading] = useState(false);
 
     try {
       setLoading(true);
-      await axios.post("http://localhost:3000/api/auth/send-email-otp", {
+      await axios.post(`${API}/api/auth/send-email-otp`, {
         email: form.email,
       });
       alert("OTP sent to email");
@@ -52,7 +52,7 @@ const [loading, setLoading] = useState(false);
     }
 
     try {
-      await axios.post("http://localhost:3000/api/auth/register", form);
+      await axios.post(`${API}/api/auth/register`, form);
       alert("Registration successful");
       navigate("/login");
     } catch (err) {
