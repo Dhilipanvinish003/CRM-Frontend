@@ -5,8 +5,8 @@ import bgvidieo from "../images/crm.mp4";
 import "../Styles/tailwind.css";
 export default function Register() {
   const navigate = useNavigate();
-const [loading, setLoading] = useState(false);
-  const [otpSent, setOtpSent] = useState(false);
+const [, setLoading] = useState(false);
+  const [, setOtpSent] = useState(false);
   
 const API = "https://crm-backend-347y.onrender.com";
 
