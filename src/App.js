@@ -23,7 +23,7 @@ import Payments from "./pages/payment";
 import Estimate  from "./pages/estimate";
 import Contracts from "./pages/contract";
 import Team from "./pages/teammember";
- import Chatbox from "./pages/chat";
+ // import Chatbox from "./pages/chat";
 
  import FollowupList from "./components/followuplist";
 
@@ -51,7 +51,7 @@ export default function App() {
           <Route path="estimates" element={< Estimate/>} />
           <Route path="contracts" element={< Contracts/>} />
           <Route path="team" element={< Team/>} />
-           <Route path="chat" element={<Chatbox/>}/>
+           // <Route path="chat" element={<Chatbox/>}/>
            <Route path="followupslist" element={<FollowupList />} />
            
           </Route>
